@@ -2,7 +2,8 @@
 Convert entanglement to edge weights/distances
 ---
 This will take a quantum surface code/circuit with arbitrary controlled-U gates 
-(see [Cirq](https://quantumcomputing.stackexchange.com/questions/5521/how-to-add-control-to-gates-in-cirq) and [Qiskit](https://qiskit.org/documentation/stubs/qiskit.circuit.library.CU3Gate.html)) and then
+(see [Cirq](https://quantumcomputing.stackexchange.com/questions/5521/how-to-add-control-to-gates-in-cirq) and [Qiskit](https://qiskit.org/documentation/stubs/qiskit.circuit.library.CU3Gate.html) 
+and [Pennylane](https://discuss.pennylane.ai/t/control-unitary-gates/541)) and then
 compute the [operator norm distance](https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html) 
 from each controlled-U to a CNOT gate. This distance will be normalized and converted
 to an edge weight on a graph describing the entanglement of the qudits effectively converting entanglement
